@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Phone Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6 flex gap-6">
+        
+        <div class="w-1/2 border-r pr-6">
+            <h2 class="text-xl font-bold mb-4">Phone book</h2>
+            
+            <ul id="contacts-list" class="space-y-2">
+                <li class="text-gray-500 italic">Loading contacts...</li>
+            </ul>
+        </div>
+
+        <div class="w-1/2">
+            <h2 class="text-xl font-bold mb-4">AI Assistant</h2>
+            <p class="text-sm text-gray-600 mb-4">Tell the assistant what you want to do (e.g. "Add Adam with number 502 231 523").</p>
+            
+            <div id="chat-output" class="bg-gray-50 h-64 overflow-y-auto p-4 rounded border mb-4 text-sm flex flex-col gap-2">
+                </div>
+
+            <form id="chat-form" class="flex gap-2">
+                <input type="text" id="prompt-input" class="flex-1 border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your command..." required>
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-bold">Send</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="/static/app.js" defer></script>
+
+</body>
+</html>
