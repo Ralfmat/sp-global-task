@@ -29,7 +29,7 @@ Here is a preview of the main operations within the app:
 The easiest way to run this application is by using Docker. You don't need to install any system dependencies other than the Docker engine. However you need to create GROQ API KEY to be able to use AI chat.
 
 ```bash
-docker run -p 8000:8000 -e GROQ_API_KEY="their_api_key_here" matiwanda/sp-global-task
+docker run -p 8000:8000 -e GROQ_API_KEY="your_api_key_here" matiwanda/sp-global-task
 ```
 
 
@@ -37,7 +37,7 @@ docker run -p 8000:8000 -e GROQ_API_KEY="their_api_key_here" matiwanda/sp-global
 Second way is to just git clone the repository. Here you also need to generate GROQ API KEY.
 ```bash
 
-git clone [https://github.com/Ralfmat/sp-global-task.git](https://github.com/Ralfmat/sp-global-task.git)
+git clone https://github.com/Ralfmat/sp-global-task.git
 cd sp-global-task
 pip install -r requirements.txt
 uvicorn main:app
